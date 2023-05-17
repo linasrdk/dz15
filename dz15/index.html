@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <script src="https://kit.fontawesome.com/bdbade8a82.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="container mt-3">
+      <h3 class="display-6"><i class="fa-solid fa-address-book" style="color: #8d8fc3;"></i>Сontact book</h3>
+      <form id="contacts-form">
+         <div class="form-cont">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control">
+         </div>
+         <div class="form-cont">
+               <label for="number">Number</label>
+               <input type="tel" id="phone" class="form-control">
+         </div>
+         <div class="form-cont">
+            <label for="isbn">Id</label>
+            <input type="text" id="isbn" class="form-control">
+         </div>
+         <input type="submit" value="Add contact" class="btn btn-secondary">
+      </form>
+      <table class="table">
+         <thead>
+            <tr>
+              <th>Name</th>
+              <th>Number</th>
+              <th>id</th>
+            </tr>
+         </thead>
+         <tbody id="contact-list"></tbody>
+      </table>
+   </div>
+   <script src="JS/listApp.js"></script>
+</body>
+</html>
